@@ -17,15 +17,22 @@ class HomeScreen extends StatelessWidget {
     return AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        leading: IconButton(
-            icon: SvgPicture.asset("assets/icons/back.svg"), onPressed: () {}),
+        leading: Padding(
+          padding: const EdgeInsets.all(4.0),
+          child: IconButton(
+              icon: SvgPicture.asset("assets/icons/back.svg"),
+              onPressed: () {}),
+        ),
         actions: <Widget>[
-          IconButton(
-            icon: SvgPicture.asset(
-              "assets/icons/search.svg",
-              color: kTextColor,
+          Padding(
+            padding: const EdgeInsets.all(6.0),
+            child: IconButton(
+              icon: SvgPicture.asset(
+                "assets/icons/search.svg",
+                color: kTextColor,
+              ),
+              onPressed: () {},
             ),
-            onPressed: () {},
           ),
         ]);
   }

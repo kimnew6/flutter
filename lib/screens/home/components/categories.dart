@@ -8,7 +8,7 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends State<Categories> {
-  List<String> categories = ["전사", "탱커", "마법사", "암살자", "원거리 딜러"];
+  List<String> categories = ["전체", "암살자", "전사", "마법사", "원거리 딜러", "서포터", "탱커"];
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -33,9 +33,9 @@ class _CategoriesState extends State<Categories> {
         });
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
+        padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin / 2),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
               categories[index],

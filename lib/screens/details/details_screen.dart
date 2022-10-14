@@ -24,20 +24,26 @@ class DetailsScreen extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.grey,
       elevation: 0,
-      leading: IconButton(
-        icon: SvgPicture.asset(
-          'assets/icons/back.svg',
-          color: Colors.white,
-        ),
-        onPressed: () => Navigator.pop(context),
-      ),
-      actions: <Widget>[
-        IconButton(
+      leading: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: IconButton(
           icon: SvgPicture.asset(
-            'assets/icons/search.svg',
+            'assets/icons/back.svg',
             color: Colors.white,
           ),
-          onPressed: () {},
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      actions: <Widget>[
+        Padding(
+          padding: const EdgeInsets.all(6.0),
+          child: IconButton(
+            icon: SvgPicture.asset(
+              'assets/icons/search.svg',
+              color: Colors.white,
+            ),
+            onPressed: () {},
+          ),
         ),
       ],
     );
