@@ -34,18 +34,6 @@ class DetailsScreen extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      actions: <Widget>[
-        Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: IconButton(
-            icon: SvgPicture.asset(
-              'assets/icons/search.svg',
-              color: Colors.white,
-            ),
-            onPressed: () {},
-          ),
-        ),
-      ],
     );
   }
 }

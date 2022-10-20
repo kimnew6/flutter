@@ -7,7 +7,8 @@ import 'package:flutter_example/screens/home/components/item_card.dart';
 // import 'categories.dart';
 
 class Body extends StatefulWidget {
-  const Body({super.key});
+  Body({super.key, required this.searchTerm});
+  final String? searchTerm;
   @override
   State<Body> createState() => _BodyState();
 }

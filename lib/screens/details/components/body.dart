@@ -31,7 +31,7 @@ class Body extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: size.height * 0.1),
                   padding: EdgeInsets.only(
-                    top: size.height * 0.12,
+                    top: size.height * 0.05,
                     left: kDefaultPaddin,
                     right: kDefaultPaddin,
                   ),
@@ -80,25 +80,7 @@ class Body extends StatelessWidget {
                             .textTheme
                             .headline6
                             ?.copyWith(color: Colors.white),
-                        // TextStyle(color: Colors.white),
                       ),
-
-                      // Row(
-                      //   children: <Widget>[
-                      //     RichText(
-                      //       text: TextSpan(
-                      //         children: [
-                      //           TextSpan(text: "Price\n"),
-                      //           TextSpan(
-                      //               text: "\$${product.price}",
-                      //               style:
-                      //                   Theme.of(context).textTheme.headline4)
-                      //         ],
-                      //       ),
-                      //     ),
-                      //     SizedBox(width: kDefaultPaddin),
-                      //   ],
-                      // )
                     ],
                   ),
                 ),
